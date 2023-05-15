@@ -1,5 +1,7 @@
 <template>
 	<a-button type="primary">primary</a-button>
+	<a-button type="danger" class="m-l-8">danger</a-button>
+	<!-- <a-button type="danger" style="margin-left: 4px;" class="">danger</a-button> -->
 	<!-- <div>
 		<a href="https://vitejs.dev" target="_blank">
 			<img src="/vite.svg" class="logo" alt="Vite logo" />
