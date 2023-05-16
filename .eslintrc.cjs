@@ -74,5 +74,6 @@ module.exports = {
 		// 只导出一个变量的时候 eslint建议默认导出 我第一个反对
 		'import/prefer-default-export': 0,
 		'vue/multi-word-component-names': 0,
+		'no-console': 0,
 	},
 }
