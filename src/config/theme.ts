@@ -1,15 +1,15 @@
 import { ConfigProvider } from 'ant-design-vue'
 
 const light = {
-	primaryColor: '#ff0000',
+    primaryColor: '#ff0000',
 }
 
 const THEME = {
-	light,
+    light,
 }
 
 ConfigProvider.config({
-	theme: THEME.light,
+    theme: THEME.light,
 })
 
 export { THEME }
