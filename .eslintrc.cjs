@@ -35,6 +35,7 @@ module.exports = {
 	},
 	// 全局自定义的宏，这样在源文件中使用全局变量就不会报错或者警告
 	globals: {
+		NProgress: 'readonly',
 		defineProps: 'readonly',
 		defineEmits: 'readonly',
 		defineExpose: 'readonly',
@@ -46,14 +47,18 @@ module.exports = {
 	// parser为 vue-eslint-parser，放在上面的parsr字段，rules放在extends字段里，选择合适的规则
 	plugins: ['vue', '@typescript-eslint'],
 	settings: {
-		// 设置项目内的别名
-		'import/reslover': {
-			alias: {
-				map: [['@', './src']],
+		'import/resolver': {
+			node: {
+				paths: ['src'],
+				extensions: ['.js', '.ts', '.d.ts', '.vue'],
 			},
 		},
+		// 设置项目内的别名
+		// 'import/reslover': {
+		// alias: {},
+		// },
 		// 允许的扩展名
-		'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.mjs'],
+		// 'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.mjs'],
 	},
 	// 自定义规则，覆盖上面extends继承的第三方库的规则，根据组内成员灵活定义
 	rules: {
@@ -64,5 +69,10 @@ module.exports = {
 		'vue/attribute-hyphenation': 0,
 		'vue/v-on-event-hyphenation': 0,
 		'no-plusplus': 0,
+		// 这个是解决不写后缀报错的问题
+		'import/extensions': 0,
+		// 只导出一个变量的时候 eslint建议默认导出 我第一个反对
+		'import/prefer-default-export': 0,
+		'vue/multi-word-component-names': 0,
 	},
 }
