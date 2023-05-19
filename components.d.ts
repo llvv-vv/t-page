@@ -10,6 +10,12 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AButton: typeof import('ant-design-vue/es')['Button']
+    ADivider: typeof import('ant-design-vue/es')['Divider']
+    ARadioButton: typeof import('ant-design-vue/es')['RadioButton']
+    ARadioGroup: typeof import('ant-design-vue/es')['RadioGroup']
+    ASpace: typeof import('ant-design-vue/es')['Space']
+    ATable: typeof import('ant-design-vue/es')['Table']
+    ATag: typeof import('ant-design-vue/es')['Tag']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
