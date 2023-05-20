@@ -6,7 +6,6 @@
             <ContentLayout></ContentLayout>
         </a-layout>
     </a-layout>
-    <!-- <router-view></router-view> -->
 </template>
 <script lang="ts" setup name="layout-index">
 import { ref } from 'vue'
