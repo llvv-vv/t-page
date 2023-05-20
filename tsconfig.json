@@ -1,32 +1,40 @@
+/*
+ * @Author: linliangwei 943607147@qq.com
+ * @Date: 2023-05-16 16:52:54
+ * @LastEditors: linliangwei 943607147@qq.com
+ * @LastEditTime: 2023-05-20 19:59:15
+ * @FilePath: \Base_APP_PC\tsconfig.json
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 {
-	"compilerOptions": {
-		// 指定es的目标版本
-		"target": "ESNext",
-		"useDefineForClassFields": true,
-		"module": "ESNext",
-		// 决定如何处理模块
-		"moduleResolution": "node",
-		"strict": true,
-		"jsx": "preserve",
-		"sourceMap": true,
-		"resolveJsonModule": true,
-		"allowImportingTsExtensions": true,
-		"isolatedModules": true,
-		"esModuleInterop": true,
-		// 编译过程中需要引入的库文件的列表
-		"lib": ["ESNext", "DOM", "DOM.Iterable"],
-		// 默认所有可见的"@types"包会在编译过程中被包含进来
-		"types": ["vite/client"],
-		"skipLibCheck": true,
-		"noEmit": true,
-		// 解析非相对模块名的基准目录
-		"baseUrl": "./",
-		// 模块名到基于baseurl的路径映射的列表
-		"paths": {
-			"@/*": ["src/*"],
-			"@c/*": ["src/config/*"]
-		}
-	},
-	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "types/**.d.ts"],
-	"references": [{ "path": "./tsconfig.node.json" }]
+    "compilerOptions": {
+        // 指定es的目标版本
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "module": "ESNext",
+        // 决定如何处理模块
+        "moduleResolution": "node",
+        "strict": true,
+        "jsx": "preserve",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "allowImportingTsExtensions": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        // 编译过程中需要引入的库文件的列表
+        "lib": ["ESNext", "DOM", "DOM.Iterable"],
+        // 默认所有可见的"@types"包会在编译过程中被包含进来
+        "types": ["vite/client"],
+        "skipLibCheck": true,
+        "noEmit": true,
+        // 解析非相对模块名的基准目录
+        "baseUrl": "./",
+        // 模块名到基于baseurl的路径映射的列表
+        "paths": {
+            "@/*": ["src/*"],
+            "@c/*": ["src/config/*"]
+        }
+    },
+    "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "types/**.d.ts"],
+    "references": [{ "path": "./tsconfig.node.json" }]
 }

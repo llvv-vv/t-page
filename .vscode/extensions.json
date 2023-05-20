@@ -1,9 +1,10 @@
 {
-	"recommendations": [
-		"Vue.volar",
-		"dbaeumer.vscode-eslint",
-		"esbenp.prettier-vscode",
-		"Vue.vscode-typescript-vue-plugin",
-		"antfu.unocss"
-	]
+    "recommendations": [
+        "Vue.volar",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "Vue.vscode-typescript-vue-plugin",
+        "antfu.unocss",
+        "OBKoro1.korofileheader"
+    ]
 }
