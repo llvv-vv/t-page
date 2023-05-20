@@ -3,10 +3,10 @@ import type { route } from 'types/route'
 const basicRoutes: Array<route> = [
     {
         path: '/',
-        name: 'ROOT',
-        redirect: '/screen',
+        name: 'root',
+        redirect: '/backstage',
         meta: {
-            title: 'ROOT',
+            title: 'root',
         },
         children: [
             {

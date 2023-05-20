@@ -11,7 +11,7 @@ const basicRoutes: Array<route> = [
         children: [
             {
                 path: '/screen/home',
-                name: 'home',
+                name: 'screen-home',
                 meta: {
                     title: '首页',
                 },
