@@ -11,7 +11,7 @@
         <v-chart autoresize :option="option" class="h-full w-full"></v-chart>
     </screenFit>
 </template>
-<script lang="ts" setup name="screen-home">
+<script setup lang="ts" name="screen-home">
 import { reactive } from 'vue'
 import { convByRatio } from '@/utils/helper'
 import screenFit from '../components/screen-fit.vue'

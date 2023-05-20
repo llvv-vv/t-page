@@ -550,3 +550,20 @@ export const queryDictList = (pageNumber, pageSize, formObj) => {
 -   [vite](https://cn.vitejs.dev/guide/)
 -   [vueuse](https://vueuse.org/guide/)
 -   [echarts](https://echarts.apache.org/zh/option.html#title)
+
+## vue3 BFC 代码片段
+
+```json
+{
+    "v3": {
+        "scope": "javascript,typescript,vue",
+        "prefix": "v3",
+        "body": [
+            "<template>$1login</template>",
+            "<script setup lang='ts' name='$1login'></script>",
+            "<style lang='less' scoped></style>"
+        ],
+        "description": "vue3 BFC"
+    }
+}
+```

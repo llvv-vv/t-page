@@ -20,7 +20,7 @@
         </div>
     </div>
 </template>
-<script lang="ts" setup name="screen-Fit">
+<script setup lang="ts" name="screen-Fit">
 import { Ref, onMounted, ref } from 'vue'
 import { useDebounceFn } from '@vueuse/core'
 
