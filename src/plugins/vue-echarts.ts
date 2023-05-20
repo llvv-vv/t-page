@@ -5,7 +5,12 @@ import type { App } from 'vue'
 import { use } from 'echarts/core'
 import { CanvasRenderer } from 'echarts/renderers'
 import { PieChart, BarChart, LineChart } from 'echarts/charts'
-import { GridComponent, TooltipComponent, LegendComponent } from 'echarts/components'
+import {
+    GridComponent,
+    TooltipComponent,
+    LegendComponent,
+    TitleComponent,
+} from 'echarts/components'
 
 use([
     PieChart,
@@ -15,6 +20,7 @@ use([
     TooltipComponent,
     LegendComponent,
     LineChart,
+    TitleComponent,
 ])
 
 const setupEcharts = (app: App) => {

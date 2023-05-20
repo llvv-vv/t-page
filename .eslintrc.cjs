@@ -76,5 +76,6 @@ module.exports = {
         'vue/multi-word-component-names': 0,
         'no-console': 0,
         'vue/component-definition-name-casing': 0,
+        'no-debugger': 0,
     },
 }

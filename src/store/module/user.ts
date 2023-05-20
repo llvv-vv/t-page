@@ -33,7 +33,7 @@ export const useUserStore = defineStore('user', {
         },
     },
     persist: {
-        key: 'zlwa_user_store',
+        key: 'hh-user-store',
         storage: window.localStorage,
     },
 })

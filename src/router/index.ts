@@ -1,8 +1,9 @@
 import type { App } from 'vue'
 import { RouteRecordRaw, createRouter, createWebHashHistory } from 'vue-router'
 import routes from './routes/index.ts'
-// import { setupRouterGuard } from './guard/index.ts'
+import { setupRouterGuard } from './guard/index.ts'
 
+console.log('routes', routes)
 const router = createRouter({
     history: createWebHashHistory(),
     routes: routes as RouteRecordRaw[],
@@ -10,7 +11,7 @@ const router = createRouter({
     strict: true,
 })
 
-// setupRouterGuard(router)
+setupRouterGuard(router)
 
 const setupRouter = (app: App): void => {
     app.use(router)

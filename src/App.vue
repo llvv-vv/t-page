@@ -1,9 +1,8 @@
 <template>
-    <!-- 这里的宽高是设计稿尺寸 不是乱写的 -->
+    <!-- 这里的宽高是设计稿尺寸 最终决定使用vw方案 弃用scale（px抖动 模糊等原因） -->
     <!-- <VScaleScreen width="1920" height="1080" :boxStyle="{ backgroundColor: '#fff' }"> -->
     <router-view></router-view>
     <!-- </VScaleScreen> -->
-    <a-button type="primary">22222222</a-button>
 </template>
 
 <script setup lang="ts">
