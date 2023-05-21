@@ -2,7 +2,7 @@
  * @Author: linliangwei 943607147@qq.com
  * @Date: 2023-05-20 13:49:56
  * @LastEditors: llw 943607147@qq.com
- * @LastEditTime: 2023-05-21 18:23:40
+ * @LastEditTime: 2023-05-21 18:50:48
  * @FilePath: \Base_APP_PC\vite.config.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -127,6 +127,7 @@ export default defineConfig(({ command, mode }) => {
             },
             preprocessorOptions: {
                 less: {
+                    // hack 黑客进来 修改ant的默认样式 达到主题定制的目的 然后全局也能用自己定义的变量
                     modifyVars: {
                         hack: `true; @import (reference) "${path.resolve(
                             'src/assets/style/theme.less'
