@@ -12,7 +12,7 @@
         <template #headerCell="{ column }">
             <template v-if="column.key === 'name'">
                 <span>
-                    <smile-outlined />
+                    <SmileOutlined />
                     Name
                 </span>
             </template>

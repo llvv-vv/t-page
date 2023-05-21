@@ -1,8 +1,8 @@
 /*
  * @Author: linliangwei 943607147@qq.com
  * @Date: 2023-05-20 13:49:56
- * @LastEditors: linliangwei 943607147@qq.com
- * @LastEditTime: 2023-05-20 20:06:07
+ * @LastEditors: llw 943607147@qq.com
+ * @LastEditTime: 2023-05-21 17:41:55
  * @FilePath: \Base_APP_PC\.eslintrc.cjs
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -85,5 +85,11 @@ module.exports = {
         'no-console': 0,
         'vue/component-definition-name-casing': 0,
         'no-debugger': 0,
+        // 以 _ 开头的变量不会报错
+        'no-unused-vars': [
+            'error',
+            { varsIgnorePattern: '^_', vars: 'all', args: 'all', ignoreRestSiblings: false },
+        ],
+        'no-underscore-dangle': 0,
     },
 }
