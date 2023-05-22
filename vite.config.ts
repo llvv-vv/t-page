@@ -29,7 +29,7 @@ export default defineConfig(({ command, mode }) => {
     const _env = loadEnv(mode, process.cwd(), '')
     return {
         // 公共路径 比如部署在www.baidu.com/second/ 下 这里就是/second/ 注意前后都有斜杠
-        base: '/',
+        base: './',
         plugins: [
             UnoCSS(),
             vue(),
