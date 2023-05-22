@@ -263,23 +263,22 @@ function getUserList(){
   }
 ````
 
+
 -   ##### config 配置文件
-    说明：配置最高级模块采用全大写命名，子级采用下划线分隔命名例如：
+    说明：配置最高级模块采用全大写命名，子级采用小驼峰命名例如：
     ```javascript
     exports {
       OAUTH: {
           //oauth中请求头内需加密的client_id
-          client_id: 'client',
+          clientId: 'client',
           //oauth中请求头内需加密的client_secret
-          client_secret: '123456'
+          clientSecret: '123456'
       },
       ...
     }
     ```
-
-````
-
-- ##### theme 主题文件
+    
+- ##### theme 主题文件(暂时不用看)
 
   说明：主题文件内自定义变量命名以 v-开头与 antdv 变量区分开
   例如：
@@ -297,7 +296,26 @@ function getUserList(){
     'body-background': '#273142',  //背景
     'text-color': '#CCD0D9', // 主文本色
   }
-````
+  ```
+
+-   ##### 文件的导入与导出
+
+    这是为了代码的可拓展性
+
+    ```js
+    // 这样写
+    const a = 1
+    
+    export {
+    	a
+    }
+    
+    // 不要这样写 
+    const a = 1
+    export default a
+    ```
+
+    
 
 ### 三、 CSS 命名-BEM
 
@@ -323,7 +341,7 @@ function getUserList(){
 
 **3. 下划线可以用来表示不同的状态**
 
-```html
+​```html
 <div class="box">
     <button class="box-btn box-btn_default" type="button"></button>
     <button class="box-btn" type="button"></button>
@@ -550,8 +568,9 @@ export const queryDictList = (pageNumber, pageSize, formObj) => {
 -   [vite](https://cn.vitejs.dev/guide/)
 -   [vueuse](https://vueuse.org/guide/)
 -   [echarts](https://echarts.apache.org/zh/option.html#title)
+-   [vite 插件列表](https://github.com/vitejs/awesome-vite#plugins)
 
-## vue3 BFC 代码片段
+## vue3 SFC 代码片段
 
 ```json
 {
@@ -563,7 +582,7 @@ export const queryDictList = (pageNumber, pageSize, formObj) => {
             "<script setup lang='ts' name='$1login'></script>",
             "<style lang='less' scoped></style>"
         ],
-        "description": "vue3 BFC"
+        "description": "vue3 SFC"
     }
 }
 ```

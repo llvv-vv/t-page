@@ -1,8 +1,8 @@
 <!--
  * @Author: linliangwei 943607147@qq.com
  * @Date: 2023-05-20 15:11:38
- * @LastEditors: linliangwei 943607147@qq.com
- * @LastEditTime: 2023-05-20 20:08:47
+ * @LastEditors: llw 943607147@qq.com
+ * @LastEditTime: 2023-05-21 18:36:50
  * @FilePath: \Base_APP_PC\src\components\base\BaseTable.vue
  * @Description: 注释
 -->
@@ -56,6 +56,8 @@
     </a-table>
 </template>
 <script setup lang="ts" name="base-table">
+import { SmileOutlined, DownOutlined } from '@ant-design/icons-vue'
+
 const columns = [
     {
         name: 'Name',
